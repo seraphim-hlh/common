@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @Controller
-@RequestMapping
 public class PageController {
     @GetMapping("/{url}")
     public String url(@PathVariable("url") String url){
+
         return url;
     }
 
